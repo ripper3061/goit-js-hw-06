@@ -28,6 +28,4 @@ const makeLiItemsList = (ingredients) => {
 };
 
 const elements = makeLiItemsList(ingredients);
-console.log(elements);
-
 addElementsUl.append(...elements);
