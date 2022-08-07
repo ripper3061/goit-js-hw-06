@@ -6,13 +6,12 @@ const incrementValue = document.querySelector(
 );
 const value = document.querySelector("#value");
 
-function onDecrementValue() {
+function onDecrementValue(e) {
   value.textContent -= 1;
 }
-function onIncrementValue() {
+function onIncrementValue(e) {
   value.textContent = Number(value.textContent) + 1;
 }
 
 decrementValue.addEventListener("click", onDecrementValue);
-
 incrementValue.addEventListener("click", onIncrementValue);
