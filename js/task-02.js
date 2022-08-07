@@ -12,7 +12,7 @@ let mass = [];
 const elementsUl = ingredients.forEach((ingredient) => {
   const liEl = document.createElement("li");
   liEl.textContent = ingredient;
-  liEl.classList = "item";
+  liEl.classList.add("item");
   mass.push(liEl);
 });
 
