@@ -5,12 +5,15 @@ const incrementValue = document.querySelector(
   'button[data-action="increment"]'
 );
 const value = document.querySelector("#value");
+let count = 0;
 
 function onDecrementValue(e) {
-  value.textContent -= 1;
+  count -= 1;
+  value.textContent = count;
 }
 function onIncrementValue(e) {
-  value.textContent = Number(value.textContent) + 1;
+  count += 1;
+  value.textContent = count;
 }
 
 decrementValue.addEventListener("click", onDecrementValue);
